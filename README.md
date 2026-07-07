@@ -1,11 +1,11 @@
 ```md
-#SuppTrack Privacy Policy
+# SuppTrack Privacy Policy
 
 **Effective:** 4 July 2026
 
 SuppTrack is designed so the developer does not receive your supplement or health-related information.
 
-##Information Stored on Your Device
+## Information Stored on Your Device
 
 The app can store supplements, ingredients, schedules, dose history, inventory, prices, purchases, check-ins, notes, preferences, and reminder settings using Apple's local storage frameworks. These records remain on your device.
 
