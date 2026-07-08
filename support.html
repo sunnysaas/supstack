@@ -1,1 +1,400 @@
-This is support page of the supstack app
+Support page for SuppTrack App
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YOUR_APP_NAME Support</title>
+  <meta name="description" content="Get support for YOUR_APP_NAME. Contact us about bugs, billing, feature requests, and app feedback." />
+
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --card: rgba(255, 255, 255, 0.78);
+      --text: #171412;
+      --muted: #746b63;
+      --line: rgba(23, 20, 18, 0.12);
+      --accent: #111111;
+      --accent-soft: #ebe3d8;
+      --radius: 28px;
+      --shadow: 0 24px 70px rgba(36, 28, 20, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, #fff7ea 0, transparent 34%),
+        radial-gradient(circle at bottom right, #ece2d4 0, transparent 32%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    nav a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .brand {
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .intro,
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .intro {
+      padding: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 540px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 0.92;
+      letter-spacing: -0.075em;
+    }
+
+    .lead {
+      margin: 24px 0 0;
+      max-width: 520px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .contact-card {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .contact-card a {
+      color: var(--text);
+      font-weight: 650;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(23, 20, 18, 0.25);
+    }
+
+    .panel {
+      padding: 28px;
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    label {
+      display: grid;
+      gap: 8px;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      appearance: none;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.82);
+      border-radius: 18px;
+      padding: 15px 16px;
+      font: inherit;
+      color: var(--text);
+      outline: none;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: rgba(23, 20, 18, 0.36);
+      box-shadow: 0 0 0 4px rgba(23, 20, 18, 0.06);
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 16px 20px;
+      background: var(--accent);
+      color: #fff;
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+      transition: transform 160ms ease, opacity 160ms ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    button:active {
+      transform: translateY(0);
+      opacity: 0.88;
+    }
+
+    .faq {
+      margin-top: 28px;
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    footer {
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        padding-top: 28px;
+      }
+
+      nav {
+        margin-bottom: 28px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .intro {
+        min-height: auto;
+        padding: 32px 24px;
+      }
+
+      .panel {
+        padding: 22px;
+      }
+
+      .row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <a class="brand" href="index.html">Supplement Tracker - SuppTrack</a>
+    </nav>
+
+    <section class="hero">
+      <div class="intro">
+        <div>
+          <div class="eyebrow">Support</div>
+          <h1>How can we help?</h1>
+          <p class="lead">
+            Tell us what happened, what device you’re using, and anything that would help us understand the issue.
+            We usually respond as soon as possible.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          Prefer email? Contact us directly at
+          <a href="mailto:saas.dashboard.ai@gmail.com">Support Email</a>.
+          <br />
+          For billing or subscription issues, please include your app name, country, and a short description of the problem.
+        </div>
+      </div>
+
+      <div class="panel">
+        <form id="supportForm">
+          <label>
+            What do you need help with?
+            <select id="category" required>
+              <option value="Bug report">Bug report</option>
+              <option value="Billing or subscription">Billing or subscription</option>
+              <option value="Feature request">Feature request</option>
+              <option value="App feedback">App feedback</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <label>
+            Your email
+            <input id="email" type="email" placeholder="you@example.com" required />
+          </label>
+
+          <div class="row">
+            <label>
+              Device
+              <input id="device" type="text" placeholder="iPhone 16 Pro" />
+            </label>
+
+            <label>
+              iOS version
+              <input id="ios" type="text" placeholder="iOS 26" />
+            </label>
+          </div>
+
+          <label>
+            Message
+            <textarea id="message" placeholder="Describe the issue or feedback..." required></textarea>
+          </label>
+
+          <p class="hint">
+            This form opens your email app with the message filled in. Nothing is stored on this website.
+          </p>
+
+          <button type="submit">Send Support Request</button>
+        </form>
+
+        <div class="faq">
+          <details>
+            <summary>How do I cancel a subscription?</summary>
+            <p>
+              Open the App Store app, tap your profile picture, then tap Subscriptions. Select the subscription and choose Cancel.
+            </p>
+          </details>
+
+          <details>
+            <summary>Where is my app data stored?</summary>
+            <p>
+              YOUR_APP_NAME is designed to store your app data on your device unless the app clearly states otherwise.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I request a feature?</summary>
+            <p>
+              Yes. Choose “Feature request” in the form and describe what you want added or improved.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 SuppTrack. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    const form = document.getElementById("supportForm");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const supportEmail = "saas.dashboard.ai@gmail.com";
+      const appName = "Supplement Tracker - SuppTrack";
+
+      const category = document.getElementById("category").value;
+      const userEmail = document.getElementById("email").value;
+      const device = document.getElementById("device").value || "Not provided";
+      const ios = document.getElementById("ios").value || "Not provided";
+      const message = document.getElementById("message").value;
+
+      const subject = encodeURIComponent(`${appName} Support: ${category}`);
+
+      const body = encodeURIComponent(
+`Support request for ${appName}
+
+Category: ${category}
+User email: ${userEmail}
+Device: ${device}
+iOS version: ${ios}
+
+Message:
+${message}`
+      );
+
+      window.location.href = `mailto:${supportEmail}?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
