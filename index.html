@@ -1,19 +1,355 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SuppTrack Privacy Policy</title><link rel="stylesheet" href="site.css"></head>
-<body><main><nav><a href="support.html">Support</a></nav>
-<p class="muted">EFFECTIVE 4 AUGUST 2026</p><h1>Privacy Policy</h1>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SuppTrack Privacy Policy</title>
+
+<style>
+    :root {
+        --bg: #f6f8f7;
+        --surface: #ffffff;
+        --surface-accent: #f0f8f4;
+        --text: #17201c;
+        --text-secondary: #5f6d66;
+        --accent: #27865d;
+        --accent-hover: #1f6d4c;
+        --border: rgba(23, 32, 28, 0.09);
+        --divider: rgba(23, 32, 28, 0.08);
+        --shadow: 0 10px 35px rgba(20, 40, 30, 0.06);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        background:
+            radial-gradient(
+                circle at 50% -10%,
+                rgba(39, 134, 93, 0.08),
+                transparent 34rem
+            ),
+            var(--bg);
+        color: var(--text);
+        font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "SF Pro Text",
+            "SF Pro Display",
+            "Segoe UI",
+            Helvetica,
+            Arial,
+            sans-serif;
+        font-size: 17px;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    main {
+        width: min(100% - 40px, 760px);
+        margin: 0 auto;
+        padding: 28px 0 72px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 44px;
+        margin-bottom: 34px;
+    }
+
+    nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 8px 15px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--text);
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        transition:
+            transform 160ms ease,
+            background 160ms ease,
+            border-color 160ms ease;
+    }
+
+    nav a:hover {
+        background: var(--surface);
+        border-color: rgba(39, 134, 93, 0.25);
+        transform: translateY(-1px);
+    }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 42px;
+        padding: 28px 30px;
+        border: 1px solid rgba(39, 134, 93, 0.13);
+        border-radius: 24px;
+        background:
+            linear-gradient(
+                145deg,
+                rgba(255, 255, 255, 0.98),
+                rgba(240, 248, 244, 0.94)
+            );
+        box-shadow: var(--shadow);
+    }
+
+    .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--accent);
+    }
+
+    .card p {
+        margin: 0;
+        color: var(--text);
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .card p + p {
+        margin-top: 10px;
+        color: var(--accent);
+        font-weight: 650;
+    }
+
+    .muted {
+        margin: 0 0 10px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 750;
+        letter-spacing: 0.12em;
+    }
+
+    h1 {
+        margin: 0 0 28px;
+        color: var(--text);
+        font-size: clamp(36px, 6vw, 48px);
+        font-weight: 750;
+        letter-spacing: -0.045em;
+        line-height: 1.05;
+    }
+
+    h1:not(:first-of-type) {
+        margin-top: 64px;
+        padding-top: 46px;
+        border-top: 1px solid var(--divider);
+    }
+
+    h2 {
+        margin: 38px 0 8px;
+        color: var(--text);
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.018em;
+        line-height: 1.3;
+    }
+
+    p {
+        margin: 0 0 18px;
+        color: var(--text-secondary);
+    }
+
+    a {
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        transition: color 150ms ease;
+    }
+
+    a:hover {
+        color: var(--accent-hover);
+    }
+
+    footer {
+        margin-top: 54px;
+        padding-top: 24px;
+        border-top: 1px solid var(--divider);
+        color: var(--text-secondary);
+        font-size: 13px;
+    }
+
+    ::selection {
+        background: rgba(39, 134, 93, 0.18);
+    }
+
+    @media (max-width: 600px) {
+        main {
+            width: min(100% - 32px, 760px);
+            padding-top: 18px;
+            padding-bottom: 48px;
+        }
+
+        nav {
+            margin-bottom: 26px;
+        }
+
+        .card {
+            margin-bottom: 34px;
+            padding: 23px 22px;
+            border-radius: 20px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+
+        h1:not(:first-of-type) {
+            margin-top: 52px;
+            padding-top: 38px;
+        }
+
+        h2 {
+            margin-top: 32px;
+            font-size: 19px;
+        }
+
+        body {
+            font-size: 16px;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: #0e1210;
+            --surface: #161b18;
+            --surface-accent: #17231d;
+            --text: #f1f5f2;
+            --text-secondary: #aab6af;
+            --accent: #69c998;
+            --accent-hover: #85d7ad;
+            --border: rgba(255, 255, 255, 0.09);
+            --divider: rgba(255, 255, 255, 0.08);
+            --shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+        }
+
+        body {
+            background:
+                radial-gradient(
+                    circle at 50% -10%,
+                    rgba(66, 177, 125, 0.11),
+                    transparent 34rem
+                ),
+                var(--bg);
+        }
+
+        nav a {
+            background: rgba(22, 27, 24, 0.75);
+        }
+
+        .card {
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(22, 27, 24, 0.98),
+                    rgba(23, 35, 29, 0.96)
+                );
+        }
+    }
+</style>
+</head>
+
+<body>
+<main>
+
+<nav>
+<a href="support.html">Support</a>
+</nav>
+
+<div class="card">
+<p>SuppTrack is a local-first supplement organizer for routines, inventory, costs and cited general education.</p>
+<p>No account. No advertising. No developer analytics. No health data sent to us.</p>
+</div>
+
+<p class="muted">EFFECTIVE 4 AUGUST 2026</p>
+<h1>Privacy Policy</h1>
+
 <p>SuppTrack is designed so the developer does not receive your supplement or health-related information.</p>
-<h2>Information stored on your device</h2><p>The app can store supplements, ingredients, schedules, dose history, inventory, prices, purchases, check-ins, notes, preferences and reminder settings using Apple’s local storage frameworks. These records remain on your device.</p>
-<h2>Information collected by us</h2><p>None. SuppTrack has no account system, developer backend, advertising SDK, tracking SDK or third-party analytics SDK. We do not receive your locally stored records.</p>
-<h2>Purchases</h2><p>Apple processes App Store purchases. SuppTrack receives entitlement information needed to unlock features. The developer does not receive payment-card details.</p>
-<h2>Notifications</h2><p>If you grant permission, reminders are scheduled through Apple’s local notification system. Permission is optional and can be withdrawn in system Settings.</p>
-<h2>Camera and label scanning</h2><p>If you choose barcode or Supplement Facts scanning, Apple’s camera and text-recognition frameworks process the image on your device. SuppTrack does not upload or retain camera images. Extracted label fields remain editable before you save them locally.</p>
-<h2>Offline product catalog</h2><p>SuppTrack includes a versioned local selection of product-label records from the NIH Dietary Supplement Label Database. Barcode and catalog searches happen on your device and are not sent to the developer or a product service.</p>
-<h2>Apple Health</h2><p>If you explicitly choose Connect Apple Health, SuppTrack can read sleep duration, step count, resting heart rate and heart-rate variability. This access is read only. Samples are aggregated in memory to display private trends and are not copied into SuppTrack storage, exports, widgets, iCloud, analytics or any server. SuppTrack does not write data to Apple Health. You can manage individual permissions in the Health app.</p>
-<h2>Widget</h2><p>The Home Screen widget uses a minimal local App Group cache containing supplement names, occurrence identifiers, scheduled times and completion state. It excludes check-ins, notes, prices, ingredients, purchases and Apple Health information.</p>
-<h2>Exports</h2><p>Data leaves the app only when you intentionally create an export and choose a destination through Apple’s share interface. After export, the destination’s privacy practices apply.</p>
-<h2>Retention and deletion</h2><p>Local records remain until you delete them in SuppTrack, use Delete All Local Data, or remove the app. The developer cannot retrieve or delete records because the developer never receives them.</p>
-<h2>iCloud</h2><p>SuppTrack does not use CloudKit to synchronize health-related records.</p>
-<h2>Children</h2><p>SuppTrack is not directed to children and does not knowingly collect personal information from anyone.</p>
-<h2>Changes</h2><p>This policy will be updated if app practices change. The effective date will be revised and App Store privacy disclosures will be updated where required.</p>
-<h2>Contact</h2><p>Use the contact information on the <a href="support.html">SuppTrack Support page</a>.</p>
-<footer>Last reviewed 4 August 2026.</footer></main></body></html>
+
+<h2>Information stored on your device</h2>
+<p>The app can store supplements, ingredients, schedules, dose history, inventory, prices, purchases, check-ins, notes, preferences and reminder settings using Apple’s local storage frameworks. These records remain on your device.</p>
+
+<h2>Information collected by us</h2>
+<p>None. SuppTrack has no account system, developer backend, advertising SDK, tracking SDK or third-party analytics SDK. We do not receive your locally stored records.</p>
+
+<h2>Purchases</h2>
+<p>Apple processes App Store purchases. SuppTrack receives entitlement information needed to unlock features. The developer does not receive payment-card details.</p>
+
+<h2>Notifications</h2>
+<p>If you grant permission, reminders are scheduled through Apple’s local notification system. Permission is optional and can be withdrawn in system Settings.</p>
+
+<h2>Camera and label scanning</h2>
+<p>If you choose barcode or Supplement Facts scanning, Apple’s camera and text-recognition frameworks process the image on your device. SuppTrack does not upload or retain camera images. Extracted label fields remain editable before you save them locally.</p>
+
+<h2>Offline product catalog</h2>
+<p>SuppTrack includes a versioned local selection of product-label records from the NIH Dietary Supplement Label Database. Barcode and catalog searches happen on your device and are not sent to the developer or a product service.</p>
+
+<h2>Apple Health</h2>
+<p>If you explicitly choose Connect Apple Health, SuppTrack can read sleep duration, step count, resting heart rate and heart-rate variability. This access is read only. Samples are aggregated in memory to display private trends and are not copied into SuppTrack storage, exports, widgets, iCloud, analytics or any server. SuppTrack does not write data to Apple Health. You can manage individual permissions in the Health app.</p>
+
+<h2>Widget</h2>
+<p>The Home Screen widget uses a minimal local App Group cache containing supplement names, occurrence identifiers, scheduled times and completion state. It excludes check-ins, notes, prices, ingredients, purchases and Apple Health information.</p>
+
+<h2>Exports</h2>
+<p>Data leaves the app only when you intentionally create an export and choose a destination through Apple’s share interface. After export, the destination’s privacy practices apply.</p>
+
+<h2>Retention and deletion</h2>
+<p>Local records remain until you delete them in SuppTrack, use Delete All Local Data, or remove the app. The developer cannot retrieve or delete records because the developer never receives them.</p>
+
+<h2>iCloud</h2>
+<p>SuppTrack does not use CloudKit to synchronize health-related records.</p>
+
+<h2>Children</h2>
+<p>SuppTrack is not directed to children and does not knowingly collect personal information from anyone.</p>
+
+<h1>Terms of Use</h1>
+
+<h2>Educational organization tool</h2>
+<p>SuppTrack organizes user-entered supplement information and provides general cited education. It is not a medical service and does not provide diagnosis, treatment, personalized dosage or emergency assistance.</p>
+
+<h2>Verify product information</h2>
+<p>Supplement formulas, packaging and instructions can change. Verify all product, ingredient, amount, expiry and schedule information against the current package.</p>
+
+<h2>Medical decisions</h2>
+<p>Consult a qualified doctor or pharmacist before changing a supplement or medicine routine, treating a deficiency, or acting on an interaction concern. Do not delay professional care because of information in SuppTrack.</p>
+
+<h2>Subscriptions and purchases</h2>
+<p>Auto-renewing subscriptions are processed by Apple and renew unless cancelled in App Store subscription settings. Lifetime access is a non-consumable in-app purchase. Current localized price, period and eligibility are shown by Apple before purchase. Apple’s applicable standard end-user licence agreement also applies.</p>
+
+<h2>No warranty of label accuracy</h2>
+<p>Catalog and user-entered information can be incomplete or inaccurate. Inclusion of a product is not endorsement by SuppTrack, NIH, FDA or Apple.</p>
+
+<h2>Acceptable use</h2>
+<p>Do not misuse the app, attempt to circumvent paid access, or rely on it for emergencies or professional medical decisions.</p>
+
+<h2>Changes</h2>
+<p>This policy will be updated if app practices change. The effective date will be revised and App Store privacy disclosures will be updated where required.</p>
+
+<h2>Contact</h2>
+<p>Use the contact information on the <a href="support.html">SuppTrack Support page</a>.</p>
+
+<footer>Last reviewed 4 August 2026.</footer>
+
+</main>
+</body>
+</html>
