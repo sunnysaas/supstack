@@ -281,7 +281,7 @@
 <p>No account. No advertising. No developer analytics. No health data sent to us.</p>
 </div>
 
-<p class="muted">EFFECTIVE 4 AUGUST 2026</p>
+<p class="muted">EFFECTIVE 30 OCTOBER 2026</p>
 <h1>Privacy Policy</h1>
 
 <p>SuppTrack is designed so the developer does not receive your supplement or health-related information.</p>
@@ -305,19 +305,16 @@
 <p>SuppTrack includes a versioned local selection of product-label records from the NIH Dietary Supplement Label Database. Barcode and catalog searches happen on your device and are not sent to the developer or a product service.</p>
 
 <h2>Apple Health</h2>
-<p>If you explicitly choose Connect Apple Health, SuppTrack can read sleep duration, step count, resting heart rate and heart-rate variability. This access is read only. Samples are aggregated in memory to display private trends and are not copied into SuppTrack storage, exports, widgets, iCloud, analytics or any server. SuppTrack does not write data to Apple Health. You can manage individual permissions in the Health app.</p>
+<p>If you explicitly choose Connect Apple Health, SuppTrack can read sleep duration, step count, resting heart rate and heart-rate variability. This access is read only. Raw Apple Health samples are processed in memory and are not copied into SuppTrack’s local database, JSON exports, widgets, CloudKit, analytics or any developer server. If you explicitly enable “Aggregated Apple Health trends” when creating an Appointment Summary, daily aggregates can be included in a PDF generated temporarily on your device. Health information is excluded from that PDF by default. You choose whether to share the PDF and with whom; the destination’s privacy practices apply. SuppTrack does not write data to Apple Health. You can manage individual permissions in the Health app.</p>
 
 <h2>Widget</h2>
-<p>The Home Screen widget uses a minimal local App Group cache containing supplement names, occurrence identifiers, scheduled times and completion state. It excludes check-ins, notes, prices, ingredients, purchases and Apple Health information.</p>
+<p>The widget uses a minimal local App Group cache containing supplement names, occurrence identifiers, scheduled times and completion state. It excludes check-ins, notes, prices, ingredients, purchases and Apple Health information.</p>
 
-<h2>Exports</h2>
-<p>Data leaves the app only when you intentionally create an export and choose a destination through Apple’s share interface. After export, the destination’s privacy practices apply.</p>
+<h2>Exports</h2><p>JSON exports and Appointment Summary PDFs are generated locally in the app’s temporary directory with complete file protection. They are marked for exclusion from automatic backups. Data is shared only when you choose a destination through Apple’s share interface. JSON exports can contain your entered check-ins and notes but do not contain Apple Health samples or aggregates. A PDF contains Apple Health aggregates only if you explicitly enable that option. After sharing, the destination’s privacy practices apply.</p>
 
-<h2>Retention and deletion</h2>
-<p>Local records remain until you delete them in SuppTrack, use Delete All Local Data, or remove the app. The developer cannot retrieve or delete records because the developer never receives them.</p>
+<h2>Retention and deletion</h2><p>Local records remain until you delete them in SuppTrack, use Delete All Local Data, or remove the app. Temporary export files may remain until the system clears them or the app is removed. Deleting records in the app does not delete copies you have shared, saved elsewhere, or retained in older device backups. The developer cannot retrieve or delete records because the developer never receives them.</p>
 
-<h2>iCloud</h2>
-<p>SuppTrack does not use CloudKit to synchronize health-related records.</p>
+<h2>Device backups and iCloud</h2><p>SuppTrack does not use CloudKit or automatically synchronize your records between devices. Starting with version 2.0, the app marks its local records, preferences and widget cache for exclusion from automatic device backups, including iCloud Backup. Apple treats this setting as guidance, not a guarantee that data can never appear in a backup or restored device. The app also applies Apple file protection to its local database and widget cache.</p><p>Do not rely on automatic device backups to restore these records after changing devices or reinstalling. Keep a manual JSON export if you need your own copy; export and import are Premium features. Updating the app does not remove copies already present in older device backups. You can manage existing device backups in Apple’s system settings.</p><p>A JSON export or PDF you intentionally save to iCloud Drive, another cloud service, or a recipient is a separate copy under your control. Its retention and privacy depend on that destination; the app’s backup exclusions do not apply to exported copies.</p>
 
 <h2>Children</h2>
 <p>SuppTrack is not directed to children and does not knowingly collect personal information from anyone.</p>
@@ -346,9 +343,9 @@
 <p>This policy will be updated if app practices change. The effective date will be revised and App Store privacy disclosures will be updated where required.</p>
 
 <h2>Contact</h2>
-<p>Use the contact information on the <a href="support.html">SuppTrack Support page</a>.</p>
+<p>Contact <a href="mailto:saas.dashboard.ai@gmail.com">saas.dashboard.ai@gmail.com</a> or visit the <a href="https://sunnysaas.github.io/supstack/support.html">SuppTrack Support page</a>.</p>
 
-<footer>Last reviewed 4 August 2026.</footer>
+<footer>Last reviewed 30 October 2026.</footer>
 
 </main>
 </body>
